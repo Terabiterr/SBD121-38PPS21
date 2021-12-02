@@ -116,6 +116,16 @@ bool Date::operator> (const Date& right)
 		return false;
 }
 
+Date& Date::operator=(const Date& right) // Date d1; Date d2; d1 = d2;
+{
+	if (this == &right)
+		return *this;
+	_day = right._day,
+	_month = right._month,
+	_year = right._year;
+	return *this;
+}
+
 const Date Date::operator+ (const Date& right)
 {
 	_day = _day + right._day,
@@ -176,7 +186,7 @@ Date& Date::operator[](const int index) // Вернуть элемент по и
 void* Date::operator new[](size_t size) // здесь не size, а размер в байтах
 {
 	cout << "new[]:\t" << size << endl;
-	void* pointToDate = malloc(size);
+	void* pointToDate = malloc(size); // функция выделения памяти от языка C
 	if (!pointToDate) // Проверить если 0
 	{
 		throw std::bad_alloc(); // Исключение
@@ -187,7 +197,7 @@ void* Date::operator new[](size_t size) // здесь не size, а размер
 void Date::operator delete[](void* datePtr) // Указатель на наш массив
 {
 	cout << "delete[]:\t" << datePtr << endl;
-	free(datePtr);
+	free(datePtr); // функция очистка памяти от языка C
 }
 
 void Date::ShiftDate31() // Сдвиг даты если в месяце 31 день

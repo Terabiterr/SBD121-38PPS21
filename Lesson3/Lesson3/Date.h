@@ -9,6 +9,7 @@ public:
 	Date();
 	Date(int day, int month, int year); // 12 байт
 	friend ostream& operator<< (ostream& out, const Date& date); // Перегрузка оператора <<
+	Date& operator= (const Date& right);
 	const Date operator+ (const Date& right);
 	const Date operator- (const Date& right);
 	const Date & operator+= (const Date& right);

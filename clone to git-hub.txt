@@ -1,0 +1,1 @@
+открываем visual studio - clone a repository
