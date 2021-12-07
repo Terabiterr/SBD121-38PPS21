@@ -116,7 +116,7 @@ bool Date::operator> (const Date& right)
 		return false;
 }
 
-Date& Date::operator=(const Date& right) // Date d1; Date d2; d1 = d2;
+Date& Date::operator= (const Date& right) // Date d1; Date d2; d1 = d2;
 {
 	if (this == &right)
 		return *this;
