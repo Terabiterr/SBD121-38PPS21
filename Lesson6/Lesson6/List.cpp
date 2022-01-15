@@ -20,6 +20,7 @@ void List<T>::Add(T data)
 	Node<T>* tmp = new Node<T>; // Новый элемент всегда равен последнему элементу в списке (new дал новый адрес)
 	tmp->data = data; // Добавить в новый адрес элемент
 	tmp->next = nullptr; // Так как это последний элемент, то он указывает на nullptr
+	tmp->previous = _tail; // Так как это previous, то указываем сразу на предыдущий (С этой строкой получаем двухсвязный список)
 
 	if (_head == nullptr) // Если list пустой и это первый заход
 	{
@@ -61,7 +62,7 @@ Node<T>& List<T>::GetHead()
 template<typename T>
 Node<T>& List<T>::GetTail()
 {
-	return *(_head);
+	return *(_tail);
 }
 
 template<typename T>

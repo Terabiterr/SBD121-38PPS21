@@ -21,6 +21,7 @@ public:
 	void Delete(int index);
 	T operator[] (int index);
 	void DeleteFirst();
+	void Sort(T& com);
 private:
 	Node<T>* _head;
 	Node<T>* _tail;
@@ -28,4 +29,4 @@ private:
 };
 
 template<typename T1>
-class Node{ public: Node<T1>* next; T1 data; };
+class Node { public: Node<T1>* next; Node<T1> * previous; T1 data; };

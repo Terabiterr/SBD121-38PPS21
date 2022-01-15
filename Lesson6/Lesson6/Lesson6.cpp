@@ -11,9 +11,21 @@ class Student
 public:
     void SetLanguage(string languages) { language._languages = languages; }
     string GetLanguage() { return language._languages; }
+    static bool CompareTo(Student& s1, Student& s2) { return s1.GetLanguage()._Equal(s2.GetLanguage()); }
 private:
     Language language;
 };
+
+template<class T>
+static List<T>& Sort(List<T>& list) // Sort
+{
+    Node<T>* tmp = &list.GetHead();
+    if (tmp->data.CompareTo(tmp->data, tmp->data)) // CompareTo
+    {
+        cout << "*******_Equal:\t" << endl;
+    }
+    return list;
+}
 
 int main()
 {
@@ -36,11 +48,22 @@ int main()
     students.Add(student3);
     students.Add(student4);
 
+    //head to tail
+    cout << "head to tail:\t" << endl;
     Node<Student> * tmp = &students.GetHead();
     while (tmp != nullptr) // show all the students and them interests
     {
         cout << tmp->data.GetLanguage() << "\t";
         tmp = tmp->next;
+    }
+    cout << endl;
+    //tail to head
+    cout << "tail to head:\t" << endl;
+    tmp = &students.GetTail();
+    while (tmp != nullptr) // show all the students and them interests
+    {
+        cout << tmp->data.GetLanguage() << "\t";
+        tmp = tmp->previous;
     }
     cout << endl;
 
@@ -66,5 +89,9 @@ int main()
     }
     cout << endl;
 
+    //Sort(students);
+
     students.Clear();
+
+    return 0;
 }
