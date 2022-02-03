@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FoldExpressions", "FoldExpr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "World", "World\World.vcxproj", "{DF681412-BB75-4E94-9C34-ED914A3BEDB2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SizeVirtualTest", "SizeVirtualTest\SizeVirtualTest.vcxproj", "{DA67FBCD-3F69-4852-BA6B-E3F13A06DC4E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{DF681412-BB75-4E94-9C34-ED914A3BEDB2}.Release|x64.Build.0 = Release|x64
 		{DF681412-BB75-4E94-9C34-ED914A3BEDB2}.Release|x86.ActiveCfg = Release|Win32
 		{DF681412-BB75-4E94-9C34-ED914A3BEDB2}.Release|x86.Build.0 = Release|Win32
+		{DA67FBCD-3F69-4852-BA6B-E3F13A06DC4E}.Debug|x64.ActiveCfg = Debug|x64
+		{DA67FBCD-3F69-4852-BA6B-E3F13A06DC4E}.Debug|x64.Build.0 = Debug|x64
+		{DA67FBCD-3F69-4852-BA6B-E3F13A06DC4E}.Debug|x86.ActiveCfg = Debug|Win32
+		{DA67FBCD-3F69-4852-BA6B-E3F13A06DC4E}.Debug|x86.Build.0 = Debug|Win32
+		{DA67FBCD-3F69-4852-BA6B-E3F13A06DC4E}.Release|x64.ActiveCfg = Release|x64
+		{DA67FBCD-3F69-4852-BA6B-E3F13A06DC4E}.Release|x64.Build.0 = Release|x64
+		{DA67FBCD-3F69-4852-BA6B-E3F13A06DC4E}.Release|x86.ActiveCfg = Release|Win32
+		{DA67FBCD-3F69-4852-BA6B-E3F13A06DC4E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
