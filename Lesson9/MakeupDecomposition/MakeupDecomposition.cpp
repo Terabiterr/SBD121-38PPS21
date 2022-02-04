@@ -15,13 +15,14 @@ void insert_all(vector<T>& vec, Ts ... ts)
 }
 int main()
 {
-    // Декомпозиция
+    // Сверстка
     vector<int> v{ 1, 2, 3 };
     insert_all(v, 4, 5, 6);
 
     for (auto& data : v)
         cout << data << endl;
-    // Сверстка
+
+    // Декомпозиция
     map<int, int> m{
         {1, v[0]},
         {2, v[1]},
@@ -30,6 +31,6 @@ int main()
         {5, v[4]},
         {6, v[5]},
     };
-    for (auto& [key, value] : m)
+    for (auto& [key, value] : m) // [key, value] = pair
         cout << "key:\t" << key << "\t" << "value:\t" << value << endl;
 }
