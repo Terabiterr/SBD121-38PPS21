@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "World", "World\World.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SizeVirtualTest", "SizeVirtualTest\SizeVirtualTest.vcxproj", "{DA67FBCD-3F69-4852-BA6B-E3F13A06DC4E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MakeupDecomposition", "MakeupDecomposition\MakeupDecomposition.vcxproj", "{00D2B8C3-FB4B-49C4-B683-D3AADA5C9693}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{DA67FBCD-3F69-4852-BA6B-E3F13A06DC4E}.Release|x64.Build.0 = Release|x64
 		{DA67FBCD-3F69-4852-BA6B-E3F13A06DC4E}.Release|x86.ActiveCfg = Release|Win32
 		{DA67FBCD-3F69-4852-BA6B-E3F13A06DC4E}.Release|x86.Build.0 = Release|Win32
+		{00D2B8C3-FB4B-49C4-B683-D3AADA5C9693}.Debug|x64.ActiveCfg = Debug|x64
+		{00D2B8C3-FB4B-49C4-B683-D3AADA5C9693}.Debug|x64.Build.0 = Debug|x64
+		{00D2B8C3-FB4B-49C4-B683-D3AADA5C9693}.Debug|x86.ActiveCfg = Debug|Win32
+		{00D2B8C3-FB4B-49C4-B683-D3AADA5C9693}.Debug|x86.Build.0 = Debug|Win32
+		{00D2B8C3-FB4B-49C4-B683-D3AADA5C9693}.Release|x64.ActiveCfg = Release|x64
+		{00D2B8C3-FB4B-49C4-B683-D3AADA5C9693}.Release|x64.Build.0 = Release|x64
+		{00D2B8C3-FB4B-49C4-B683-D3AADA5C9693}.Release|x86.ActiveCfg = Release|Win32
+		{00D2B8C3-FB4B-49C4-B683-D3AADA5C9693}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
